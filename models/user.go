@@ -61,12 +61,12 @@ func Userinit() error {
 	session, _ := mgo.Dial(URL)
 	defer session.Close()
 	user := &User{}
-	Password := "daiyu2621300"
+	Password := "test_password"
 	hash, _ := bcrypt.GenerateFromPassword([]byte(Password), 5)
 	user.PassWord = hash
 	user.InviteCode = "66666"
-	user.Phone = "18020285981"
-	user.Email = "1594250583@qq.com"
+	user.Phone = "18036987412"
+	user.Email = "1236987452@qq.com"
 	user.Name = "Jack"
 	user.AllDays = int16(265)
 	user.Collections = []int8{2, 12, 15, 18, 29}
@@ -75,7 +75,7 @@ func Userinit() error {
 		Content: "我就是我",
 	}
 	user.Comment = []Comment{pinglun}
-	user.UserName = "1594250583"
+	user.UserName = "1478569845"
 	user.Continued = 25
 	user.Gender = "Male"
 	user.Head = "/opt/go/src/picture/123.jpg"
@@ -100,8 +100,8 @@ func Admininit() error {
 	hash, _ := bcrypt.GenerateFromPassword([]byte(Password), 5)
 	user.PassWord = hash
 	user.InviteCode = "66666"
-	user.Phone = "18020285981"
-	user.Email = "1594250583@qq.com"
+	user.Phone = "18036987412"
+	user.Email = "1478523698@qq.com"
 	user.Name = "Jack"
 	user.AllDays = int16(265)
 	user.Collections = []int8{2, 12, 15, 18, 29}
@@ -110,7 +110,7 @@ func Admininit() error {
 		Content: "我就是我",
 	}
 	user.Comment = []Comment{pinglun}
-	user.UserName = "1594250583"
+	user.UserName = "1236547896"
 	user.Continued = 25
 	user.Gender = "Male"
 	user.Head = "/opt/go/src/picture/123.jpg"

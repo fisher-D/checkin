@@ -7,16 +7,16 @@ func InitUser(){
 
 }
 func Login(){
-	u := "1594250583"
-	p := "daiyu2621300"
+	u := "test_account"
+	p := "test_password"
 	res := LoginFunc(u,p)
 	fmt.Println(res)
 }
 func Regist(){
-	u := "18118160571"
-	p := "yanyimingN.1"
-	ph := "18118160571"
-	e := "893908059@qq.com"
+	u := "test_account1"
+	p := "test_password1"
+	ph := "18254789631"
+	e := "5879641259@qq.com"
 	err :=CommonRegister(u,p,ph,e)
 	if err!=nil{
 		//fmt.Println("Something Wrong")
@@ -27,9 +27,9 @@ func Regist(){
 }
 func Update(){
 	c :=make(map[string]string)
-	username := "1594250583"
+	username := "test_username"
 	c["name"]="IamJack"
-	c["phone"]="18020285982"
+	c["phone"]="18023698741"
 	err :=UpdateUser(username,c)
 	if err !=nil{
 		fmt.Println(err)
